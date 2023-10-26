@@ -20,17 +20,32 @@ Para definir permissões 400 para uma pasta e todos os arquivos recursivamente, 
   
   <img width="571" alt="Screenshot 2023-10-25 at 21 34 17" src="https://github.com/laysearaujo/devops/assets/46059216/20b43475-7e64-4a42-8682-b8c3b6770125">
 
-
 ## Problema 3: Instalação e Configuração do Nginx
 
 Para instalar e configurar o servidor web Nginx no Linux, siga os passos:
 
-* Abra o terminal e atualize o sistema com `sudo apt update`.
-* Instale o Nginx com `sudo apt install nginx`.
-* Inicie o serviço com `sudo systemctl start nginx`.
-* Verifique o status com `sudo systemctl status nginx` para garantir que o Nginx esteja em execução.
-* Vá para o diretório de configuração com `cd /etc/nginx/sites-available/`.
-* Abra o arquivo de configuração padrão com um editor de texto, como `sudo nano default`.
+* Abra o terminal e atualize o sistema com `brew update`.
+  
+  <img width="569" alt="Screenshot 2023-10-25 at 21 46 23" src="https://github.com/laysearaujo/devops/assets/46059216/b6596387-0623-486c-9f88-6c6ff7dbf901">
+* Instale o Nginx com `brew install nginx`.
+  
+  <img width="565" alt="Screenshot 2023-10-25 at 21 48 53" src="https://github.com/laysearaujo/devops/assets/46059216/d99aede5-5891-4a25-88d3-045db62b9813">
+* Inicie o serviço com `brew services start nginx`.
+
+  <img width="572" alt="Screenshot 2023-10-25 at 21 52 11" src="https://github.com/laysearaujo/devops/assets/46059216/e663bfd7-369b-4a3a-a832-6e8840249100">
+* Verifique o status com `brew services list` para garantir que o Nginx esteja em execução.
+
+  
+  <img width="566" alt="Screenshot 2023-10-25 at 21 51 28" src="https://github.com/laysearaujo/devops/assets/46059216/491b84d4-f592-4f46-abde-4b2eb87824fa">
+* Vá para o diretório de configuração com `cd /opt/homebrew/etc/nginx`.
+
+  <img width="569" alt="Screenshot 2023-10-25 at 21 58 38" src="https://github.com/laysearaujo/devops/assets/46059216/9b4568d2-249a-4b3f-a170-ab473dbe858a">
+
+* Abra o arquivo de configuração padrão com um editor de texto, como `sudo nano nginx.conf`.
 * No arquivo de configuração, substitua o conteúdo pela seguinte linha: `echo "ADA + AdaTech + SeuNome = Sucesso!" > /var/www/html/index.html`.
 * Salve o arquivo e saia do editor.
-* Reinicie o Nginx com `sudo systemctl restart nginx`
+
+  <img width="561" alt="Screenshot 2023-10-25 at 22 30 58" src="https://github.com/laysearaujo/devops/assets/46059216/b7eee816-e0bb-4fde-8d0f-c98ed6e07f09">
+* Reinicie o Nginx com `sudo brew services restart nginx`
+
+  <img width="426" alt="Screenshot 2023-10-25 at 22 29 33" src="https://github.com/laysearaujo/devops/assets/46059216/04990679-bd6a-4db5-a0bf-d0a721f33e74">
