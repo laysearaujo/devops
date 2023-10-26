@@ -1,6 +1,6 @@
-# Problema 1: Criação de Novo Usuário
+## Problema 1: Criação de Novo Usuário
 
-## Para criar um novo usuário no Linux, siga os seguintes passos:
+Para criar um novo usuário no Linux, siga os seguintes passos:
 
 * Abra o terminal ou acesse o servidor Linux.
 * Use o comando sudo adduser nome_do_usuario para criar o novo usuário. Substitua "nome_do_usuario" pelo nome do usuário desejado.
