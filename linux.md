@@ -1,3 +1,5 @@
+**Usuária de macOS**
+
 ## Problema 1: Criação de Novo Usuário
 
 Para criar um novo usuário no Linux, siga os seguintes passos:
