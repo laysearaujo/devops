@@ -17,6 +17,8 @@ Para definir permissões 400 para uma pasta e todos os arquivos recursivamente, 
 * Crie uma pasta usando `mkdir nomedapasta`.
 * Use o comando `touch arquivo1.txt arquivo2.txt arquivo3.txt arquivo4.txt arquivo5.txt` para criar os 5 arquivos de texto.
 * Use o comando `chmod -R 400 nomedapasta` para definir as permissões 400 recursivamente na pasta e seus arquivos. Isso concede permissão de leitura apenas para o dono dos arquivos e da pasta.
+  
+  <img width="571" alt="Screenshot 2023-10-25 at 21 34 17" src="https://github.com/laysearaujo/devops/assets/46059216/20b43475-7e64-4a42-8682-b8c3b6770125">
 
 
 ## Problema 3: Instalação e Configuração do Nginx
