@@ -5,10 +5,10 @@
 Para criar um novo usuário no Linux, siga os seguintes passos:
 
 * Abra o terminal ou acesse o servidor Linux.
-* Use o comando `sudo adduser nome_do_usuario` para criar o novo usuário. Substitua "nome_do_usuario" pelo nome do usuário desejado.
-* O sistema irá solicitar a definição de uma senha para o novo usuário.
-* Preencha as informações adicionais, como nome real, telefone, etc., ou apenas pressione Enter para deixá-las em branco.
-* O usuário será criado com um diretório pessoal em `/home/nome_do_usuario`.
+* Use o comando `sudo dscl . -create /Users/novousuario` para criar o novo usuário. Substitua "nome_do_usuario" pelo nome do usuário desejado.
+* Defina o diretório `sudo dscl . -create /Users/novousuario NFSHomeDirectory /Users/novousuario`
+* Definir shell padrão `sudo dscl . -create /Users/novousuario UserShell /bin/bash`
+* Use o comando sudo passwd novousuario para definir uma senha para o novo usuário. Substitua "novousuario" pelo nome do usuário. `sudo passwd novousuario`
 
 ## Problema 2: Permissões de Arquivo no Linux
 
